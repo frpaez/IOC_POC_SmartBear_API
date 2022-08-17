@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Pet" path="/pet" id="2414d42e-5a7d-49b7-bc0a-37010d55aede" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2414d42e-5a7d-49b7-bc0a-37010d55aedefileName">Pet</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:resource name="findBytatus" path="findBytatus" id="70d2cc6d-f43a-4264-bd41-649608a821f0">
+    <con:settings>
+      <con:setting id="70d2cc6d-f43a-4264-bd41-649608a821f0fileName">findBytatus</con:setting>
+    </con:settings>
+    <con:parameters/>
+    <con:method name="Method 1" id="a6af8636-d33e-4435-bfe4-f35e1d658df8" method="GET">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter required="true">
+          <con:name>status</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+        </con:parameter>
+      </con:parameters>
+      <con:request name="Request 1" id="67c641b1-5ec0-40ba-b0c1-96f320c77971" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="status " value="dolf"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>status</con:entry>
+        </con:parameterOrder>
+      </con:request>
+    </con:method>
+  </con:resource>
+  <con:method name="Method 1" id="a5c87910-9f87-4fa4-ae25-bef65829c72f" method="PUT">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="c4fd21ad-572a-41e3-99db-d68f7febea4d" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+      <con:request>{
+    ""name"": ""doggie"",
+    ""photoUrls"": [
+        ""in velit Duis Excepteur eiusmod"",
+        ""aute qui cillum esse""
+    ],
+    ""id"": 18479137,
+    ""category"": {
+        ""id"": 15261113,
+        ""name"": ""dolor pariatur deserunt""
+    },
+    ""tags"": [
+        {
+            ""id"": -90734598,
+            ""name"": ""ex reprehenderit nisi occaecat""
+        },
+        {
+            ""id"": 50145765,
+            ""name"": ""fugiat sint culpa Duis""
+        }
+    ],</con:request>
+      <con:originalUri>https://petstore.swagger.io/v2/Pet</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+    </con:request>
+  </con:method>
+</con:resource>

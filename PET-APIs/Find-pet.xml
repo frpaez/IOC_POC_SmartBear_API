@@ -7,17 +7,23 @@
   <con:method name="Method 1" id="327f995c-cec5-465e-9c6f-a5264dbe9f68" method="PUT">
     <con:settings/>
     <con:parameters/>
-    <con:request name="Request 1" id="f5a91860-e57f-46f2-8dd7-ae83a6ddd94e" mediaType="application/json" postQueryString="false">
+    <con:request name="Request 1" id="bcb35390-6f13-41c7-9023-9c295981f295" mediaType="application/json" postQueryString="false">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>
       <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
       <con:request/>
+      <con:originalUri>https://petstore.swagger.io/v2/pet/findByStatus</con:originalUri>
       <con:credentials>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
+      <con:parameters>
+        <con:entry key="status" value="sold"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>status</con:entry>
+      </con:parameterOrder>
     </con:request>
   </con:method>
   <con:method name="Method 2" id="8bae3ceb-7264-479c-9112-7f3a699d2f0d" method="GET">
@@ -53,9 +59,12 @@
     <con:settings/>
     <con:parameters/>
     <con:request name="Request 1" id="f0db52c7-728b-42d8-a9c7-28a378e7a2f3" mediaType="application/json" postQueryString="false">
-      <con:settings/>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
       <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
       <con:request/>
+      <con:originalUri>https://petstore.swagger.io/v2/pet/findByStatus</con:originalUri>
       <con:credentials>
         <con:authType>No Authorization</con:authType>
       </con:credentials>

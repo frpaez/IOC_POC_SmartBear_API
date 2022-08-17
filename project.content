@@ -3,9 +3,14 @@ Ecommerce\buy.xml
 Ecommerce\logout.xml
 Ecommerce\search.xml
 PET-APIs\Find-pet.xml
+PET-APIs\Pet.xml
+PET-APIs\findBytatus.xml
 Sample-REST-Test-Suite\Simple-Login-Call.xml
 Sample-REST-Test-Suite\Integration-Test.xml
 Sample-REST-Test-Suite\DataDriven-REST-Test.xml
+Test-Suite-Pet\FindPet.xml
+Test-Suite-Pet\new-Pet.xml
+Test-Suite-Pet\false-path.xml
 EcommerceVirt\%2Ftest.xml
 EcommerceVirt\buy.xml
 EcommerceVirt\login.xml
