@@ -44,13 +44,14 @@
       </con:settings>
       <con:endpoint>http://localhost:8084</con:endpoint>
       <con:request/>
+      <con:originalUri>http://localhost/search</con:originalUri>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters>
-        <entry key="searchstring" value="Item 1" xmlns="http://eviware.com/soapui/config"/>
+        <con:entry key="searchstring" value="Item 1"/>
       </con:parameters>
       <con:parameterOrder>
         <con:entry>sessionid</con:entry>
