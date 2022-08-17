@@ -2,6 +2,7 @@ Ecommerce\Login.xml
 Ecommerce\buy.xml
 Ecommerce\logout.xml
 Ecommerce\search.xml
+PET-APIs\Find-pet.xml
 Sample-REST-Test-Suite\Simple-Login-Call.xml
 Sample-REST-Test-Suite\Integration-Test.xml
 Sample-REST-Test-Suite\DataDriven-REST-Test.xml
