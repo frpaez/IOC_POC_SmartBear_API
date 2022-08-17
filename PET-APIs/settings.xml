@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="117f0e39-2f52-4d23-abfc-7673eac2df5c" name="PET APIs" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <con:settings>
+    <con:setting id="117f0e39-2f52-4d23-abfc-7673eac2df5cfileName">PET-APIs</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="PET APIs.json">
+    <con:part>
+      <con:url>PET APIs.json</con:url>
+      <con:content>{"openapi":"3.0.1","info":{"title":"PET APIs","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/pet/findByStatus":{"description":"","get":{"description":"","responses":{"default":{"description":"Default response"}}},"put":{"description":"","requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}},"post":{"description":"","requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}},"delete":{"description":"","requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}},"options":{"description":"","responses":{"default":{"description":"Default response"}}},"head":{"description":"","responses":{"default":{"description":"Default response"}}}}}}</con:content>
+      <con:type>https://swagger.io/openapiv3/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+  </con:endpoints>
+</con:interface>
