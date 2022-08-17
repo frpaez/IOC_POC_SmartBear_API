@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="findBytatus" path="/pet/findBytatus" id="86e1e8e0-fe56-4afe-9cc8-c78f0e58a1c0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="86e1e8e0-fe56-4afe-9cc8-c78f0e58a1c0fileName">findBytatus</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:resource name="findBytatus" path="findBytatus" id="70d2cc6d-f43a-4264-bd41-649608a821f0">
+    <con:settings>
+      <con:setting id="70d2cc6d-f43a-4264-bd41-649608a821f0fileName">findBytatus</con:setting>
+    </con:settings>
+    <con:parameters/>
+    <con:method name="Method 1" id="a6af8636-d33e-4435-bfe4-f35e1d658df8" method="GET">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter required="true">
+          <con:name>status</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+        </con:parameter>
+      </con:parameters>
+      <con:request name="Request 1" id="67c641b1-5ec0-40ba-b0c1-96f320c77971" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="status " value="dolf"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>status</con:entry>
+        </con:parameterOrder>
+      </con:request>
+    </con:method>
+  </con:resource>
+  <con:method name="Method 1" id="57b34372-4e37-4f02-bbb8-5a426e80d92f" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>status</con:name>
+        <con:value>sold</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>sold</con:default>
+        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="aefc5830-549b-4ce2-8d91-c36372c38775" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://petstore.swagger.io/v2/pet/findBytatus</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="status" value="sold"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>status</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

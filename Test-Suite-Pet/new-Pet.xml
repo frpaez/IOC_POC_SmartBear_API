@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="66722c6d-c0e2-4b4e-ac93-222d1f5b865e" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="new Pet" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="66722c6d-c0e2-4b4e-ac93-222d1f5b865efileName">new-Pet</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="1a97002d-a305-4c91-bcfe-dcc69e01e18b">
+    <con:settings/>
+    <con:config service="PET APIs" resourcePath="/pet" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="c4fd21ad-572a-41e3-99db-d68f7febea4d" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+        <con:request>{
+    ""name"": ""doggie"",
+    ""photoUrls"": [
+        ""in velit Duis Excepteur eiusmod"",
+        ""aute qui cillum esse""
+    ],
+    ""id"": 18479137,
+    ""category"": {
+        ""id"": 15261113,
+        ""name"": ""dolor pariatur deserunt""
+    },
+    ""tags"": [
+        {
+            ""id"": -90734598,
+            ""name"": ""ex reprehenderit nisi occaecat""
+        },
+        {
+            ""id"": 50145765,
+            ""name"": ""fugiat sint culpa Duis""
+        }
+    ],</con:request>
+        <con:originalUri>https://petstore.swagger.io/v2/Pet</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="892e0c8c-2ead-4197-b9c8-869ab7170933" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>400</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="7cf9c135-c415-4d20-a779-f13ecc5f7e55" name="Response SLA">
+          <con:configuration>
+            <SLA>300</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
