@@ -128,7 +128,7 @@ NOTE: Check the Test Case transaction log after the execution of the test to vie
         <con:assertion type="Valid HTTP Status Codes" id="669153b5-171f-40f6-8f3c-9fbb86de9c45" name="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
-            <codes>200</codes>
+            <codes>201</codes>
           </con:configuration>
         </con:assertion>
         <con:credentials>
