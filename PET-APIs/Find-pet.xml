@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="Find pet" path="/pet/findByStatus" id="2aaa31bb-8e2b-46c6-afa4-5d6339a35b2e" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="Find pet" path="/pet/findByStatus" id="2aaa31bb-8e2b-46c6-afa4-5d6339a35b2e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="2aaa31bb-8e2b-46c6-afa4-5d6339a35b2efileName">Find-pet</con:setting>
   </con:settings>
@@ -15,6 +15,7 @@
       <con:request/>
       <con:originalUri>https://petstore.swagger.io/v2/pet/findByStatus</con:originalUri>
       <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -44,6 +45,7 @@
       <con:request/>
       <con:originalUri>https://petstore.swagger.io/v2/pet/findByStatus</con:originalUri>
       <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -53,65 +55,6 @@
       <con:parameterOrder>
         <con:entry>status</con:entry>
       </con:parameterOrder>
-    </con:request>
-  </con:method>
-  <con:method name="Method 3" id="98aeb94a-c4bf-4a7c-8811-ffca71975f77" method="POST">
-    <con:settings/>
-    <con:parameters/>
-    <con:request name="Request 1" id="f0db52c7-728b-42d8-a9c7-28a378e7a2f3" mediaType="application/json" postQueryString="false">
-      <con:settings>
-        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-      </con:settings>
-      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
-      <con:request/>
-      <con:originalUri>https://petstore.swagger.io/v2/pet/findByStatus</con:originalUri>
-      <con:credentials>
-        <con:authType>No Authorization</con:authType>
-      </con:credentials>
-      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
-    </con:request>
-  </con:method>
-  <con:method name="Method 4" id="2a9d0a85-39bc-4fd7-b5b8-269cb46462b5" method="DELETE">
-    <con:settings/>
-    <con:parameters/>
-    <con:request name="Request 1" id="ae2ab68a-16c2-4432-8b08-f260350ef406" mediaType="application/json" postQueryString="false">
-      <con:settings/>
-      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
-      <con:request/>
-      <con:credentials>
-        <con:authType>No Authorization</con:authType>
-      </con:credentials>
-      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
-    </con:request>
-  </con:method>
-  <con:method name="Method 5" id="90de8fee-7252-4e52-8a22-690b73c1c724" method="OPTIONS">
-    <con:settings/>
-    <con:parameters/>
-    <con:request name="Request 1" id="dc92970d-f2d6-4888-aaad-b06af296dd09" mediaType="application/json">
-      <con:settings/>
-      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
-      <con:request/>
-      <con:credentials>
-        <con:authType>No Authorization</con:authType>
-      </con:credentials>
-      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
-    </con:request>
-  </con:method>
-  <con:method name="Method 6" id="5053d49b-0ce1-44a3-b507-d225f5a36952" method="HEAD">
-    <con:settings/>
-    <con:parameters/>
-    <con:request name="Request 1" id="aaff35b7-30bd-40b1-b022-f20e6d0db52c" mediaType="application/json">
-      <con:settings/>
-      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
-      <con:request/>
-      <con:credentials>
-        <con:authType>No Authorization</con:authType>
-      </con:credentials>
-      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
     </con:request>
   </con:method>
 </con:resource>

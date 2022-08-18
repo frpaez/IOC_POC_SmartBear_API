@@ -11,6 +11,9 @@ Sample-REST-Test-Suite\DataDriven-REST-Test.xml
 Test-Suite-Pet\FindPet.xml
 Test-Suite-Pet\new-Pet.xml
 Test-Suite-Pet\false-path.xml
+FindPet-LoadTest.xml
+new-Pet-LoadTest.xml
+false-path-LoadTest.xml
 EcommerceVirt\%2Ftest.xml
 EcommerceVirt\buy.xml
 EcommerceVirt\login.xml

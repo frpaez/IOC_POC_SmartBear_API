@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="Pet" path="/pet" id="2414d42e-5a7d-49b7-bc0a-37010d55aede" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="Pet" path="/pet" id="2414d42e-5a7d-49b7-bc0a-37010d55aede" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="2414d42e-5a7d-49b7-bc0a-37010d55aedefileName">Pet</con:setting>
   </con:settings>
@@ -24,6 +24,7 @@
         <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
         <con:request/>
         <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -67,6 +68,7 @@
     ],</con:request>
       <con:originalUri>https://petstore.swagger.io/v2/Pet</con:originalUri>
       <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>

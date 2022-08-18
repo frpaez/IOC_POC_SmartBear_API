@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="findBytatus" path="/pet/findBytatus" id="86e1e8e0-fe56-4afe-9cc8-c78f0e58a1c0" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="findBytatus" path="/pet/findBytatus" id="86e1e8e0-fe56-4afe-9cc8-c78f0e58a1c0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="86e1e8e0-fe56-4afe-9cc8-c78f0e58a1c0fileName">findBytatus</con:setting>
   </con:settings>
@@ -24,6 +24,7 @@
         <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
         <con:request/>
         <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
@@ -44,8 +45,8 @@
         <con:value>sold</con:value>
         <con:style>QUERY</con:style>
         <con:default>sold</con:default>
-        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
       </con:parameter>
     </con:parameters>
     <con:request name="Request 1" id="aefc5830-549b-4ce2-8d91-c36372c38775" mediaType="application/json">
@@ -56,6 +57,7 @@
       <con:request/>
       <con:originalUri>https://petstore.swagger.io/v2/pet/findBytatus</con:originalUri>
       <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
